@@ -1,0 +1,16 @@
+<div class="row">
+
+<div class="login-form col-md-4 offset-md-4">
+  <input [(ngModel)]="UserName" name="UserName" class="form-control" type="text" placeholder="User Name">
+
+  <input [(ngModel)]="password" name="password" class="form-control" type="password" placeholder="Password">
+
+  <div *ngIf="LoginError" class="alert alert-danger">
+    Wrong password. Retry...
+  </div>
+
+  <button (click)="login()" class="btn btn-info">Sign in</button>
+
+</div>
+
+</div>

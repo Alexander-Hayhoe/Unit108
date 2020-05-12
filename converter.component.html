@@ -1,0 +1,9 @@
+<h3>Temperature converted</h3>
+
+Fahrenheit: <input type="number" [(ngModel)]="fahrenheit" (ngModelChange)="convertToC()">
+<br>
+Celcius: <input type="number" [(ngModel)]="celcius" (ngModelChange)="convertToF()"> 
+<br>
+<button (click)="convertToC()">Convert to Celcius</button>
+<button (click)="convertToF()">Convert to Fahrenheit</button>
+

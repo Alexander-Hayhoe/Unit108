@@ -1,0 +1,55 @@
+<!-- 
+
+    email
+    userName
+    password
+
+    first name
+    last name
+    phone number
+    marital status
+    SSN
+    
+
+ -->
+
+ <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input [(ngModel)]="model.email" type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Username</label>
+    <input [(ngModel)]="model.userName" name="username" type="Username" class="form-control" id="exampleInputPassword1" placeholder="Username">
+  </div>
+  <div class="form-group">
+    <label [(ngModel)]="model.password" name="password" for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label [(ngModel)]="model.firstName" name="firstName" for="exampleInputPassword1">First Name</label>
+    <input type="Username" class="form-control" id="exampleInputPassword1" placeholder="First Name">
+  </div>
+  <div class="form-group">
+    <label [(ngModel)]="model.lastName" name="lastName" for="exampleInputPassword1">Last Name</label>
+    <input type="Username" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+  </div>
+  <div class="form-group">
+    <label [(ngModel)]="model.phoneNumber" name="phoneNumber" for="exampleInputPassword1">Phone #</label>
+    <input type="Username" class="form-control" id="exampleInputPassword1" placeholder="Phone Number">
+  </div>
+  <div class="form-group">
+    <label [(ngModel)]="model.maritalStatus" name="maritalStatus" for="exampleInputPassword1">Marital Status</label>
+    <input type="Username" class="form-control" id="exampleInputPassword1" placeholder="Yes or No">
+  </div>
+  <div class="form-group">
+    <label [(ngModel)]="model.ssn" name="ssn" for="exampleInputPassword1">SSN</label>
+    <input type="Username" class="form-control" id="exampleInputPassword1" placeholder="xxx-xx-xxxx">
+  </div>
+  <div class="form-check">
+    <input  type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button [disabled]="!isDataCorrect()" (click)="save()" name="Submit" type="button" class="btn btn-primary">Register User</button>
+</form>
